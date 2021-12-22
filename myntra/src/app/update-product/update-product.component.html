@@ -1,0 +1,31 @@
+<div class="container">
+    <form [formGroup]="editForm" (ngSubmit)="onSubmit()">
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email </label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="email">
+       
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">name</label>
+        <input type="text" class="form-control" formControlName="name" id="exampleInputPassword1">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">category ID</label>
+        <input type="text" class="form-control" formControlName="catid" id="exampleInputPassword1">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Description</label>
+        <input type="text" class="form-control" formControlName="desc" id="exampleInputPassword1">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Price</label>
+        <input type="text" class="form-control" formControlName="price" id="exampleInputPassword1">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Vendor</label>
+        <input type="text" class="form-control" formControlName="vendor" id="exampleInputPassword1">
+      </div>
+        
+        <button type="submit" class="btn btn-primary">Update</button>
+      </form>
+</div>

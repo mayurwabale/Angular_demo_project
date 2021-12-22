@@ -1,0 +1,14 @@
+<form>
+  <h2>Sign UP</h2>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" #signUpEmail>
+
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" #signUpPass>
+  </div>
+  <a routerLink="/">Log IN</a>
+  <button type="button" (click)="onSignUp(signUpEmail.value,signUpPass.value)" class="btn btn-primary">Submit</button>
+</form>
